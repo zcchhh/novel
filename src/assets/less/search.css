@@ -1,0 +1,58 @@
+.search {
+  padding: 10px 20px 0;
+}
+.search /deep/ .van-search {
+  padding: 0;
+}
+.search .nav {
+  display: flex;
+}
+.search .nav /deep/ .van-icon-arrow-left {
+  margin-top: 4px;
+}
+.search .nav .nav-back {
+  width: 30px;
+  height: 33.97px;
+  line-height: 33.97px;
+}
+.search .nav .nav-s {
+  flex: auto;
+}
+.search .nav .nav-cli {
+  font-size: 14px;
+  color: #333;
+  width: 40px;
+  text-align: center;
+  height: 33.97px;
+  line-height: 33.97px;
+}
+.search .hot .hot-head {
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+}
+.search .hot .hot-label li {
+  float: left;
+  padding: 10px 15px;
+  margin: 5px 6px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+.search .history-box .history-head {
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 30px;
+}
+.search .history-box .hot-label li {
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+}
+.search .history-title {
+  font-size: 18px;
+}
+.search /deep/ .van-icon-delete {
+  font-size: 14px;
+  margin-top: 18px;
+}
