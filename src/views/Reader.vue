@@ -73,9 +73,9 @@
           >
         </div>
         <div class="footer-catalog">
-          <span @click="huanZhang('prev')">上一页</span>
-          <span>目录</span>
-          <span @click="huanZhang('next')">下一页</span>
+          <span @click="huanZhang('prev')">上一章</span>
+          <span @click="goList">目录</span>
+          <span @click="huanZhang('next')">下一章</span>
         </div>
       </div>
     </div>
@@ -141,6 +141,14 @@ export default {
     this.setPaging();
   },
   methods: {
+    //进入章节列表页面
+    goList() {
+      let shuYuanId = this.shuYuanId;
+      this.$router.push({
+        name: "CatalogList",
+        query: { shuYuanId, bookName: this.xiaoShuoMing },
+      });
+    },
     goBack() {
       this.$router.go(-1);
     },

@@ -64,7 +64,7 @@ export default {
         },
       })
         .then((result) => {
-          console.log("搜素相关内容=>", result.data);
+          console.log("搜索相关内容=>", result.data);
           let containerData = result.data.books;
           for (let i = 0; i < containerData.length; i++) {
             let start = containerData[i].cover.indexOf("http");
